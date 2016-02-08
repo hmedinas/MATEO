@@ -10,6 +10,10 @@
     <script src="Recursos/Script/ImageRotator/mb.bgndGallery.js"></script>
     <link href="Recursos/Themes/Green/Frame.css" rel="stylesheet" />
     <style type="text/css">
+
+
+
+
       
     </style>
     <script type="text/javascript">
