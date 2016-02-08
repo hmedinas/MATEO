@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>.:: MATEO ::.</title>
+     <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="../../Recursos/Script/ImageRotator/mb.bgndGallery.js"></script>
+    <link href="../../Recursos/Themes/Green/General.css" rel="stylesheet" />
+    
+    <link href="../../Recursos/Mateo/Style/Menu/Menu.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+
+            $.mbBgndGallery.buildGallery({
+                // containment:"#wrapper",
+                containment: "#video",
+                timer: 4000,
+                effTimer: 2000,
+                controls: "#controls",
+                grayScale: false,
+                // If your server allow directory listing
+                //folderPath:"elements/",
+                // else:
+                images: [
+                            "../../Recursos/Image/ImageRotator/1.jpg",
+                            "../../Recursos/Image/ImageRotator/2.jpg",
+                            "../../Recursos/Image/ImageRotator/3.jpg",
+                            "../../Recursos/Image/ImageRotator/4.jpg",
+                            "../../Recursos/Image/ImageRotator/5.jpg",
+                            "../../Recursos/Image/ImageRotator/6.jpg",
+                            "../../Recursos/Image/ImageRotator/7.jpg",
+                            "../../Recursos/Image/ImageRotator/8.jpg",
+                            "../../Recursos/Image/ImageRotator/9.jpg",
+                            "../../Recursos/Image/ImageRotator/10.jpg"
+                ],
+                onStart: function () { $("#controls .play").hide(); $("#controls .pause").show(); },
+                onPause: function () { $("#controls .play").show(); $("#controls .pause").hide(); },
+                onPlay: function (opt) { $("#controls .play").hide(); $("#controls .pause").show(); },
+                onChange: function (idx) { }, //idx=the zero based index of the displayed photo
+                onNext: function (opt) { }, //opt=the options relatives to this component instance
+                onPrev: function (opt) { } //opt=the options relatives to this component instance
+            });
+            $(".bw").toggle(
+            function () {
+                var el = $("#video").get(0);
+                el.opt.grayScale = true;
+                $(this).addClass("sel");
+                el.opt.gallery.find("img:first").greyScale();
+            },
+            function () {
+                var el = $("#video").get(0);
+                el.opt.grayScale = false;
+                $(this).removeClass("sel");
+                el.opt.gallery.find("img:first").attr("src", el.opt.images[el.opt.imageCounter]);
+            }
+            )
+        });
+    </script>
+</head>
+<body>  
+
+    <script src="../../Recursos/Mateo/Style/General/image/LoadingPage.js"></script>
+    <div>
+        <div class="header">
+            <div class="header_back">
+                <div class="header_left">
+                    <img src="../../Recursos/Image/Logo.png" alt="Logo" class="header_rigth-img" />
+                </div>
+                <div class="triangulo_top_left">
+                </div>
+                <div class="header_rigth">
+                    MENU DE IMPORTACIONES                      
+                </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <table class="menu">
+                <tr>
+                    <td style="width: 50%">
+                        <div class="menu_left">
+
+                            <div class="menu_left-video" id="video">
+                                <div id="controls" style="display: none">
+                                    <div class="pause">
+                                        Pause
+                                    </div>
+                                    <div class="play">
+                                        Play
+                                    </div>
+                                    <div class="prev">
+                                        Prev
+                                    </div>
+                                    <div class="next">
+                                        Next
+                                    </div>
+                                    <div class="counter">
+                                    </div>
+                                    <div class="bw">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu_left-text">
+                                <a>INNOVACION TECNOLOGICA</a><br />
+                                <p>
+                                    Utilizamos, desarrollamos y ofrecemos soluciones tecnológicas, 
+                        respondiendo con éxito y rapidez a las necesidades de nuestros 
+                        clientes. Logramos que la carga aérea de iportación esté
+                        a disposición del iportador en un promedio de cuatro 
+                        horas luego de arribada la aeronave.
+
+                        Todas nuestras operaciones utilizan adecuados sistemas de 
+                        control, que hacen más seguro, rápido y eficiente el 
+                        servicio que reciben nuestros clientes:<br />
+                                    <b>- TalmaNet -</b> Sistema que permite el tracking de la carga.<br />
+                                    <b>- MATEO -</b> Módulo de Atención Electrónica de Operaciones<br />
+                                    <b>- SIOP -</b> Sistema Integral de Operaciones.<br />
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 50%">
+                        <div class="menu_rigth">
+                            <div class="menu_rigth-option">
+
+
+                                <button type="button" class="menu_rigth-option--button" onclick="redirect('../Simulacion/SendInvoice.html')">
+                                    <div class="icon-Invoice">
+                                        Envio de
+                                        <br />
+                                        Facturas
+                                    </div>
+                                </button>
+                                <br />
+                                <br />
+                                
+                                <button type="button" class="menu_rigth-option--button" onclick="redirect('../Consultas/Guia.html')">
+                                    <div class="icon-Reva">
+                                        Consulta de
+                                        <br />
+                                        Revalidación
+                                    </div>
+                                </button>
+                                <br />
+                                <br />
+                                <button type="button" class="menu_rigth-option--button"  onclick="redirect('../Consultas/Guia.html')">
+                                    <div class="icon-Box">
+                                        Consulta de
+                                        <br />
+                                        Guias
+                                    </div>
+                                </button>
+                                <br />
+                                <br />
+                                <button type="button" class="menu_rigth-option--button">
+                                    <div class="icon-Simula">
+                                        Simulación de
+                                        <br />
+                                        Factura
+                                    </div>
+                                </button>
+                                <br />
+                                <br />
+                                <button type="button" class="menu_rigth-option--button">
+                                    <div class="icon-Char">
+                                        Estadisticas
+                                        <br />
+                                        De Carga
+                                    </div>
+                                </button>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>  
+     <script src="../../Recursos/Mateo/Script/General.js"></script>
+    <script type="text/javascript">
+        HideLoadingPage();
+    </script>
+</body>
+</html>

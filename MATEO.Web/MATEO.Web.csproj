@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MATEO.Web</RootNamespace>
+    <AssemblyName>MATEO.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frmdefault.aspx" />
+    <Content Include="Importaciones\Consultas\Guia.html" />
+    <Content Include="Importaciones\Inicio\mImpo.html" />
+    <Content Include="Importaciones\Revalidaciones\ConsultaReva.html" />
+    <Content Include="Importaciones\Simulacion\SendInvoice.html" />
+    <Content Include="Inicio\reset.css" />
+    <Content Include="Inicio\Reticula.css" />
+    <Content Include="Inicio\SelectEmpresa.html" />
+    <Content Include="Recursos\Mateo\Script\Importacion\Consultas\Guias.js" />
+    <Content Include="Recursos\Mateo\Script\XMLFile1.xml" />
+    <Content Include="Recursos\Mateo\Style\General\css\Reticula.css" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\FlechaAzul.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\Print.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\Salir.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\Simular-2.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\Simular-3.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\btn\Simular.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\Calculator.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\LogOut.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\print.png" />
+    <Content Include="Recursos\Mateo\Style\Index\image\background-conference-1.jpg" />
+    <Content Include="Recursos\Mateo\Style\Index\image\body2.jpg" />
+    <Content Include="Recursos\Mateo\Style\Index\image\descarga.png" />
+    <Content Include="Inicio\Index.html" />
+    <Content Include="Recursos\Mateo\Style\Index\image\Logo.png" />
+    <Content Include="Recursos\Mateo\Style\Index\image\logo_talma.png" />
+    <Content Include="Recursos\Mateo\Style\Index\image\logo_talma_.png" />
+    <Content Include="Recursos\Mateo\Style\Index\image\TALMA_2.png" />
+    <Content Include="Recursos\Image\Charts.png" />
+    <Content Include="Recursos\Image\Fact.png" />
+    <Content Include="Recursos\Image\ImageRotator\1.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\10.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\2.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\3.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\4.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\5.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\6.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\7.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\8.jpg" />
+    <Content Include="Recursos\Image\ImageRotator\9.jpg" />
+    <Content Include="Recursos\Image\Logo.png" />
+    <Content Include="Recursos\Image\menu_option.png" />
+    <Content Include="Recursos\Mateo\Script\Const.js" />
+    <Content Include="Recursos\Mateo\Script\Footer.js" />
+    <Content Include="Recursos\Mateo\Script\General.js" />
+    <Content Include="Recursos\Mateo\Script\header.js" />
+    <Content Include="Recursos\Mateo\Script\Teclado.js" />
+    <Content Include="Recursos\Mateo\Style\General\css\Editorial.css" />
+    <Content Include="Recursos\Mateo\Style\General\css\Formas.css" />
+    <Content Include="Recursos\Mateo\Style\General\css\Layout.css" />
+    <Content Include="Recursos\Mateo\Style\General\css\Loading.css" />
+    <Content Include="Recursos\Mateo\Style\General\css\Secciones.css" />
+    <Content Include="Recursos\Mateo\Style\General\General.css" />
+    <Content Include="Recursos\Mateo\Script\LoadingPage.js" />
+    <Content Include="Recursos\Mateo\Style\General\image\BARR-MED.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\Boton_Simular.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\Boton_Imprimir.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\Boton_Retornar.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\keyboard-icon %281%29.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\keyboard-icon.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\ribbon-beta.png" />
+    <Content Include="Recursos\Mateo\Style\General\image\ss.gif" />
+    <Content Include="Recursos\Mateo\Style\General\image\Search.png" />
+    <Content Include="Recursos\Mateo\Style\General\css\normalize.css" />
+    <Content Include="Recursos\Mateo\Style\Index\Index.css" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\box.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\Chart-64.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\Chart2-64.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\Charts.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\Fact.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\SendFact.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\Simula.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\image\menu_option.png" />
+    <Content Include="Recursos\Mateo\Style\Menu\Menu.css" />
+    <Content Include="Recursos\Mateo\Style\Page\css\Guia.css" />
+    <Content Include="Recursos\Mateo\Style\Page\Page.css" />
+    <Content Include="Recursos\Mateo\Style\Teclado\image\kb-keys.png" />
+    <Content Include="Recursos\Mateo\Style\Teclado\Teclado.css" />
+    <Content Include="Recursos\Script\Browser.js" />
+    <Content Include="Recursos\Script\External\JSLINQ.js" />
+    <Content Include="Recursos\Script\External\linq.js" />
+    <Content Include="Recursos\Script\ImageRotator\mb.bgndGallery.js" />
+    <Content Include="Recursos\Script\SimData.js" />
+    <Content Include="Recursos\Themes\Green\General.css" />
+    <Content Include="Recursos\Themes\Green\Menu.css" />
+    <Content Include="Recursos\ULD_Recursos\Image\AlertTime.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Excel.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\home_24.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\home_32.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\update_24.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\update_32.png" />
+    <Content Include="Recursos\ULD_Recursos\Script\DescargaExcel.js" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\linq-vsdoc.js" />
+    <Content Include="Scripts\linq.d.ts" />
+    <Content Include="Scripts\linq.js" />
+    <Content Include="Scripts\linq.min.js" />
+    <Content Include="ULD\Data.js" />
+    <Content Include="ULD\frmBoarULDs.aspx" />
+    <Content Include="Recursos\ULD_Recursos\Image\body.jpg" />
+    <Content Include="Recursos\ULD_Recursos\Image\Fondo1.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Lan.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\llegada.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\loading.gif" />
+    <Content Include="Recursos\ULD_Recursos\Image\CV.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Logo_TALMANET.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Math_32.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Math_48.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Minus_32.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\Minus_48.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\salida.png" />
+    <Content Include="Recursos\ULD_Recursos\Image\user.png" />
+    <Content Include="Recursos\ULD_Recursos\Style\ULD.css" />
+    <Content Include="Recursos\ULD_Recursos\Script\ULDS.js" />
+    <Content Include="UserControl\ucHeader.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmdefault.aspx.cs">
+      <DependentUpon>frmdefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmdefault.aspx.designer.cs">
+      <DependentUpon>frmdefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ULD\frmBoarULDs.aspx.cs">
+      <DependentUpon>frmBoarULDs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ULD\frmBoarULDs.aspx.designer.cs">
+      <DependentUpon>frmBoarULDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucHeader.ascx.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucHeader.ascx.designer.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exportaciones\" />
+    <Folder Include="Importaciones\ULD\" />
+    <Folder Include="Recursos\JavaScript\" />
+    <Folder Include="Recursos\Mateo\Image\" />
+    <Folder Include="Recursos\Mateo\Script\Importacion\Revalidaciones\" />
+    <Folder Include="Recursos\Mateo\Script\Importacion\Simulacion\" />
+    <Folder Include="Recursos\Mateo\Style\Page\image\" />
+    <Folder Include="Recursos\Themes\Blue\" />
+    <Folder Include="Recursos\Themes\Green\image\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17075/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

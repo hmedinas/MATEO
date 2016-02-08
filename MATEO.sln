@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.Web", "MATEO.Web\MATEO.Web.csproj", "{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.Bussines.Entity", "MATEO.Bussines.Entity\MATEO.Bussines.Entity.csproj", "{43E46E55-D3C5-4E6C-AF6F-2935FE363CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.Data.Access", "MATEO.Data.Access\MATEO.Data.Access.csproj", "{B01AD9F3-A060-4DAB-8795-23D218799CCC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MATEO.Web.Telerick", "http://localhost:34871", "{B2100A71-51CC-4604-8B48-98122EBC94B2}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "Svn"
+		SccAuxPath = "Svn"
+		SccLocalPath = "Svn"
+		SccProvider = "SubversionScc"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_34871"
+		Debug.AspNetCompiler.PhysicalPath = "MATEO.Web.Telerick\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34871\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_34871"
+		Release.AspNetCompiler.PhysicalPath = "MATEO.Web.Telerick\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34871\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "MATEO.Web.Telerick\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.ApiRest", "MATEO.ApiRest\MATEO.ApiRest.csproj", "{FF0F5E11-E9B5-4EFC-BA06-3521BEBAF5F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.Bussines.Logic", "MATEO.Bussines.Logic\MATEO.Bussines.Logic.csproj", "{7244785E-F0FA-4AEB-9DEA-251D77A0596A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATEO.Service.Wcf", "MATEO.Service.Wcf\MATEO.Service.Wcf.csproj", "{098C1602-E107-42B2-B21B-34B30CF61ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30329FA-8E05-4DB7-BDEC-BDE091B13AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E46E55-D3C5-4E6C-AF6F-2935FE363CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E46E55-D3C5-4E6C-AF6F-2935FE363CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E46E55-D3C5-4E6C-AF6F-2935FE363CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E46E55-D3C5-4E6C-AF6F-2935FE363CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01AD9F3-A060-4DAB-8795-23D218799CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01AD9F3-A060-4DAB-8795-23D218799CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01AD9F3-A060-4DAB-8795-23D218799CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01AD9F3-A060-4DAB-8795-23D218799CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2100A71-51CC-4604-8B48-98122EBC94B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2100A71-51CC-4604-8B48-98122EBC94B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2100A71-51CC-4604-8B48-98122EBC94B2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2100A71-51CC-4604-8B48-98122EBC94B2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FF0F5E11-E9B5-4EFC-BA06-3521BEBAF5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0F5E11-E9B5-4EFC-BA06-3521BEBAF5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0F5E11-E9B5-4EFC-BA06-3521BEBAF5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0F5E11-E9B5-4EFC-BA06-3521BEBAF5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7244785E-F0FA-4AEB-9DEA-251D77A0596A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7244785E-F0FA-4AEB-9DEA-251D77A0596A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7244785E-F0FA-4AEB-9DEA-251D77A0596A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7244785E-F0FA-4AEB-9DEA-251D77A0596A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098C1602-E107-42B2-B21B-34B30CF61ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098C1602-E107-42B2-B21B-34B30CF61ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098C1602-E107-42B2-B21B-34B30CF61ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098C1602-E107-42B2-B21B-34B30CF61ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

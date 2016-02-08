@@ -1,0 +1,268 @@
+﻿.contenedor
+    {
+        display: table;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedor-cell
+    {
+        display: table-cell;
+        vertical-align: middle;
+          
+    }
+
+    .contenedor-content
+    {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+
+    .contenedor-content-left
+    {
+    }
+
+    .contenedor-content-rigth
+    {
+    }
+
+.filtros_header
+{
+    background-image: url("/Recursos/Mateo/Style/General/image/BARR-MED.png");    
+    height: 34px;
+    width: 325px;
+    padding-top: 25px;
+    color: black;
+    font-family: "Open Sans","Arial",sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    position: fixed;
+    z-index: 10;
+    padding-left: 65px;
+}
+
+.filtros_body
+{
+    background-color: white;
+    border-top-right-radius: 10px;
+    text-align: left;
+    padding-left: 25px;
+    font-family: "Open Sans","Arial",sans-serif;
+    font-family: monospace;
+    font-size: 15px;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 500px;
+    z-index: 5;
+    padding-top: 20px;
+    box-shadow: 7px 7px 7px rgba(126, 197, 118, 0.76);
+    border-radius: 10px;
+    border: 2px solid #033d7d;
+}
+.div_select
+{
+    display:table-cell;
+    clear: both;
+	margin: 0 50px;
+}
+.label_select
+{
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4
+}
+        
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	    margin-top: 0.5em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+    color: #FFFFFF;
+    background-color: #00AA00;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+
+
+.search_div
+{
+        /* background: linear-gradient(180deg, rgba(187, 185, 187,0.8) 0%, rgba(0, 0, 0,.5) 100%); */
+    height: 50px;
+    border-radius: 7px;
+    width: 400px;
+    display: table;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0,.5);
+    border-color: rgba(119, 119, 119, 0.42);
+}
+
+/* radio focus */
+.search-tecl
+{          
+    width: 60px;
+    display: table-cell;
+    background-color: rgba(174, 190, 182, 0.74);
+    background-image: url('/Recursos/Mateo/Style/General/image/keyboard-icon.png');
+    background-repeat: no-repeat !important;
+    background-position: center 0em !important;
+}
+
+.search-Busc
+{
+    background-image: url('/Recursos/Mateo/Style/General/image/Search.png');
+    background-repeat: no-repeat !important;
+    background-position: center .6em !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+    display: table-cell;
+    background-color: rgba(0, 170, 0, 0.49);
+}
+  
+.tr-gray {
+    background: #5CC48D none repeat scroll 0% 0%;
+    /* font-weight: bold; */
+    border: 1px solid #25a0da;
+    color: #fff;
+    background-color: #25a0da;
+}
+        
+.tr-1
+{
+    background: white none repeat scroll 0% 0%;
+    height: 45px;
+}
+
+.tr-2
+{
+    background: #EFF7FF none repeat scroll 0% 0%;
+        height: 45px;
+}
+.td_center
+{
+    text-align:center;
+    border: 1px solid #FDFDFD
+}
+.td_left
+{
+    text-align:left;
+    border: 1px solid #FDFDFD
+}
+.td_rigth
+{
+    text-align:right;
+    border: 1px solid #FDFDFD
+}
+.text_table_desc
+{
+    text-align: right;
+    font-weight: bold;
+    height: 25px;
+}
+.extra
+{
+    background-image: none;
+    background: -webkit-linear-gradient(#004E96, #5A9DD4);
+    background: -o-linear-gradient(#004E96, #5A9DD4);
+    background: -moz-linear-gradient(#004E96, #5A9DD4);
+    background: linear-gradient(#FFFFFF, #5A9DD4);
+    /* color: white; */
+}
+.Imprimir
+{
+    background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Imprimir.png');         
+    display: table-cell;
+    height: 50px;
+    width: 140px;
+    padding-top: 46px;
+    padding-left: 90px;
+    /* position: static; */
+    margin-top: 100px;
+    background: url('../../Recursos/Mateo/Style/General/image/Boton_Imprimir.png');
+    color: #171742;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.Simular
+{
+    background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Simular.png');
+    display: table-cell;
+    height: 50px;
+    width: 140px;
+    padding-top: 46px;
+    padding-left: 90px;
+    /* position: static; */
+    margin-top: 100px;
+            
+    color: #171742;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Regresar
+{
+    background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Retornar.png');
+            
+    height: 50px;
+    width: 140px;
+    padding-top: 46px;
+    padding-left: 90px;
+    /* position: static; */
+    margin-top: 100px;
+            
+    color: #171742;
+    font-size: 20px;
+    font-weight: bold;
+}

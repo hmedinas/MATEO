@@ -1,0 +1,631 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>.:: MATEO ::.</title>
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Se carga el Header y fondo del mateo -->
+    <link href="../../Recursos/Mateo/Style/General/General.css" rel="stylesheet" />
+    <script src="../../Recursos/Mateo/Script/General.js"></script>
+
+    <style>
+        .filtros_header
+        {
+            background-image: url("../../Recursos/Mateo/Style/General/image/BARR-MED.png");
+            height: 34px;
+            width: 325px;
+            padding-top: 25px;
+            color: black;
+            font-family: "Open Sans","Arial",sans-serif;
+            font-size: 18px;
+            font-weight: lighter;
+            position: fixed;
+            z-index: 10;
+            padding-left: 65px;
+        }
+
+        .filtros_body
+        {
+            background-color: white;
+            border-top-right-radius: 10px;
+            text-align: left;
+            padding-left: 25px;
+            font-family: "Open Sans","Arial",sans-serif;
+            font-family: monospace;
+            font-size: 15px;
+            position: relative;
+            margin-top: 40px;
+            margin-left: 25px;
+            width: 500px;
+            z-index: 5;
+            padding-top: 20px;
+            box-shadow: 7px 7px 7px rgba(126, 197, 118, 0.76);
+            border-radius: 10px;
+            border: 2px solid #033d7d;
+        }
+        .div_select
+        {
+            display:table-cell;
+            clear: both;
+	        margin: 0 50px;
+        }
+        .label_select
+        {
+            width: 200px;
+            border-radius: 3px;
+            border: 1px solid #D1D3D4
+        }
+        
+        /* hide input */
+        input.radio:empty {
+	        margin-left: -999px;
+        }
+
+        /* style label */
+        input.radio:empty ~ label {
+	        position: relative;
+	        float: left;
+	        line-height: 2.5em;
+	        text-indent: 3.25em;
+	          margin-top: 0.5em;
+	        cursor: pointer;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+        }
+
+        input.radio:empty ~ label:before {
+	        position: absolute;
+	        display: block;
+	        top: 0;
+	        bottom: 0;
+	        left: 0;
+	        content: '';
+	        width: 2.5em;
+	        background: #D1D3D4;
+	        border-radius: 3px 0 0 3px;
+        }
+
+        /* toggle hover */
+        input.radio:hover:not(:checked) ~ label:before {
+	        content:'\2714';
+	        text-indent: .9em;
+	        color: #C2C2C2;
+        }
+
+        input.radio:hover:not(:checked) ~ label {
+	        color: #888;
+        }
+
+        /* toggle on */
+        input.radio:checked ~ label:before {
+	        content:'\2714';
+	        text-indent: .9em;
+	        color: #9CE2AE;
+	        background-color: #4DCB6D;
+            color: #FFFFFF;
+          background-color: #00AA00;
+        }
+
+        input.radio:checked ~ label {
+	        color: #777;
+        }
+
+
+        .search_div
+        {
+             /* background: linear-gradient(180deg, rgba(187, 185, 187,0.8) 0%, rgba(0, 0, 0,.5) 100%); */
+          height: 50px;
+          border-radius: 7px;
+          width: 400px;
+          display: table;
+          border-style: solid;
+          border-width: 1px;
+          border-color: rgba(0, 0, 0,.5);
+          border-color: rgba(119, 119, 119, 0.42);
+        }
+
+        /* radio focus */
+        .search-tecl
+        {          
+            width: 60px;
+            display: table-cell;
+            background-color: rgba(174, 190, 182, 0.74);
+            background-image: url('../../Recursos/Mateo/Style/General/image/keyboard-icon.png');
+            background-repeat: no-repeat !important;
+            background-position: center 0em !important;
+        }
+
+        .search-Busc
+        {
+            background-image: url('../../Recursos/Mateo/Style/General/image/Search.png');
+            background-repeat: no-repeat !important;
+            background-position: center .6em !important;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 60px;
+            display: table-cell;
+            background-color: rgba(0, 170, 0, 0.49);
+        }
+  
+        .tr-gray {
+            background: #5CC48D none repeat scroll 0% 0%;
+            /* font-weight: bold; */
+            border: 1px solid #25a0da;
+            color: #fff;
+            background-color: #25a0da;
+        }
+        
+        .tr-1
+        {
+            background: white none repeat scroll 0% 0%;
+                height: 35px;
+        }
+
+        .tr-2
+        {
+            background: #EFF7FF none repeat scroll 0% 0%;
+                height: 35px;
+        }
+        .text_table_desc
+        {
+          text-align: right;
+          font-weight: bold;
+          height: 25px;
+        }
+        .extra
+        {
+            background-image: none;
+            background: -webkit-linear-gradient(#004E96, #5A9DD4);
+            background: -o-linear-gradient(#004E96, #5A9DD4);
+            background: -moz-linear-gradient(#004E96, #5A9DD4);
+            background: linear-gradient(#FFFFFF, #5A9DD4);
+            /* color: white; */
+        }
+        .Imprimir
+        {
+            background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Imprimir.png');         
+            display: table-cell;
+            height: 50px;
+            width: 140px;
+            padding-top: 46px;
+            padding-left: 90px;
+            /* position: static; */
+            margin-top: 100px;
+            background: url('../../Recursos/Mateo/Style/General/image/Boton_Imprimir.png');
+            color: #171742;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .Simular
+        {
+            background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Simular.png');
+            display: table-cell;
+            height: 50px;
+            width: 140px;
+            padding-top: 46px;
+            padding-left: 90px;
+            /* position: static; */
+            margin-top: 100px;
+            
+            color: #171742;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .Regresar
+        {
+            background-image:url('../../Recursos/Mateo/Style/General/image/Boton_Retornar.png');
+            
+            height: 50px;
+            width: 140px;
+            padding-top: 46px;
+            padding-left: 90px;
+            /* position: static; */
+            margin-top: 100px;
+            
+            color: #171742;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+    </style>
+    <script>
+        /* MOSTRAR TIPO DE TECLADO*/
+
+        function ShowTeclado(ControlCall)
+        {            
+            if (document.getElementById('rboVolante').checked == true) {
+                ShowTecladoNumber(ControlCall);
+            }
+            else {
+                ShowTecladoEmail(ControlCall);
+            }
+        }
+        function FindControl(ControlCall)
+        {
+            if (document.getElementById('rboVolante').checked == true) {
+                var Variable=document.getElementById('ControlCall').value;
+                document.getElementById('ControlCall').value = CompletarIzq(Variable, 8, '0');
+                ShowLoadingPage();
+            }
+            else {
+                ShowLoadingPage();
+            }
+        }
+
+        /*          TECLADO ALFANUMERICO  001            */
+        function ShowTecladoEmail(ControlCall)
+        {
+            keyboardControlCall = ControlCall;
+            var TextTeclado = $("[data-keyboard='TEXTO-EMAIL']");         
+            TextTeclado.val(document.getElementById(keyboardControlCall).value);
+            $("#id_teclado_Email").css("display", "table");
+        }
+        function hideTecladoEmail()
+        {
+            var Loading = $("#id_teclado_Email");
+            Loading.hide();
+            document.getElementById(keyboardControlCall).focus();
+        }
+        /*          TECLADO NUMERICO              */
+        function ShowTecladoNumber(ControlCall)
+        {
+            keyboardControlCall = ControlCall;
+            var TextTeclado = $("[data-keyboard='TEXTO-NUMBER']");
+            TextTeclado.val(document.getElementById(keyboardControlCall).value);
+            $("#id_teclado_Number").css("display", "table");
+        }
+        function hideTecladoNumber() {
+            var Loading = $("#id_teclado_Number");
+            Loading.hide();
+            document.getElementById(keyboardControlCall).focus();
+        }
+    </script>
+</head>
+<body>
+    <script src="../../Recursos/Mateo/Script/LoadingPage.js"></script>
+    <!-- SIMULADOR DE DATA  -->
+    <script src="../../Recursos/Script/SimData.js"></script>
+        <!-- LLAMAOS A LOS TECLADO -->
+        <script src="../../Recursos/Mateo/Script/Teclado.js"></script>   
+    <div>
+        <div class="header">
+            <div class="header_back">
+                <div class="header_left">
+                    <img src="../../Recursos/Image/Logo.png" alt="Logo" class="header_rigth-img" />
+                </div>
+                <div class="triangulo_top_left">
+                </div>
+                <div class="header_rigth">
+                    CONSULTA REVALIDACIONES
+                </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-cell">
+                <div class="contenedor-content">
+
+                    <div class="contenedor-cell">
+                          
+                        <div class="filtros_header">
+                            CONSULTAR POR 
+                             
+                        </div>
+                        <div class="filtros_body">
+                           
+                            <div class="div_select">
+                                <input type="radio" name="radio" id="rboVolante" class="radio" checked />
+                                <label for="rboVolante" class="label_select">NRO DE VOLANTE</label>
+                            </div>
+                            <div class="div_select" style="width:20px;">
+
+                            </div>
+                            <div class="div_select">
+                                <input type="radio" name="radio" id="rboGuia" class="radio"/>
+                                <label for="rboGuia" class="label_select">NRO DE GUIA</label>
+                            </div>
+                             <div class="text_search">
+                                 <br />
+                             </div>
+                            <div class="text_search" >
+                                <div class="search_div">
+                                    <input id="ControlCall" type="text" style="  font-size: 2em !important;text-align:center;  text-transform: uppercase; height: 100%; background-color: transparent; border-radius: 5px;  width: 100%;  display: table-cell; border-style: none;"/>
+                                    <div class="search-tecl" onclick="ShowTeclado('ControlCall');"></div>
+                                    <div class="search-Busc" onclick="FindControl('ControlCall');"></div>
+                                  
+                                </div>
+                            </div>
+                             <div class="text_search">
+                                 <br />
+                             </div>
+
+                        </div>
+                        <div class="text_search">
+                                 <br />
+                            <br />
+                        </div>
+                        <div class="filtros_header">
+                            RESULTADO DE LA CONSULTA 
+                        </div>
+                        <div class="filtros_body" style="height:300px">
+                           
+                          <table style="width:100%;padding-right: 10px;">
+                              <tr class="tr-gray">
+                                  <td style="width:30px">
+
+                                  </td>
+                                  <td>
+                                      MANIFIESTO
+                                  </td>
+                                  <td>
+                                      MASTER
+                                  </td>
+                                  <td>
+                                      HOUSE
+                                  </td>
+                                  <td>
+                                      VOLANTE
+                                  </td>
+                              </tr>
+                              <tr class="tr-1">
+                                  <td>
+                                      <input type="radio" name="radio" id="radio4" class="radio"/>
+                                  </td>
+                                  <td>
+                                      2015-200013
+                                  </td>
+                                  <td>
+                                      2120112312444
+                                  </td>
+                                  <td>
+                                      ASFKEDO2342352342
+                                  </td>
+                                  <td>
+                                      0001235
+                                  </td>
+                              </tr>
+                              <tr class="tr-2">
+                                   <td>
+                                       <input type="radio" name="radio" id="radio3" class="radio"/>
+                                  </td>
+                                  <td>
+                                      2015-200013
+                                  </td>
+                                  <td>
+                                      2120112312444
+                                  </td>
+                                  <td>
+                                      ASFKEDO2342352342
+                                  </td>
+                                  <td>
+                                      0001235
+                                  </td>
+                              </tr>
+                          </table>
+                        </div>
+
+                    </div>
+
+                    <div class="contenedor-cell" style="width:20px">
+                        
+                    </div>
+                    <div class="contenedor-cell">
+                        <div class="filtros_header">
+                            INFORMACION DEL VOLANTE 
+                        </div>
+                        <div class="filtros_body extra" style="height:410px;width:600px">
+                            <img src="../../Recursos/Mateo/Style/General/image/ribbon-beta.png" style="position: absolute;">
+                         <table  style="width:100%;padding-right: 10px;">
+                             <tr style="font-size: 20px;">
+                                 <td colspan="4" style="text-align: center;height:55px">
+                                     <div style="text-align: center;width:100%">                                        
+                                             <div style="width: 250px;border: 1px solid rgba(63, 66, 252, 0.22); text-align: center; margin: 0 auto; box-shadow: 7px 7px 7px rgba(118, 134, 197, 0.76);border-radius: 5px;">
+                                                 VOLANTE : 000124
+                                             </div> 
+                                         <br />                                        
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     MANIFIESTO :</td>
+                                 <td>
+                                     201500000006927
+                                 </td>
+                                 <td class="text_table_desc">
+
+                                     NRO VUELO :</td>
+                                 <td>
+                                     7783
+                                  </td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     LINEA AEREA :</td>
+                                 <td colspan="3">
+                                     CARGOLUX AIRLINES INTERNATIONAL, S.A.
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     ORIGEN :</td>
+                                 <td>
+
+                                     LUXEMBOURG -- LUXEMB</td>
+                                 <td class="text_table_desc">
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+
+                                     DESTINO :</td>
+                                 <td>
+
+                                     MEXICO CITY -- MEXIC</td>
+                                 <td class="text_table_desc">
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     GUIA MASTER :</td>
+                                 <td>
+
+                                     017285730186</td>
+                                 <td class="text_table_desc">
+
+                                     GUIA HOUSE :</td>
+                                 <td>
+
+                                     01210755</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     AGE. RECEPTOR :</td>
+                                 <td colspan="3">
+                                    CAPITAL LOGISTICS SA DE CV</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+
+                                     AGE. EMBARCADOR:</td>
+                                 <td colspan="3">
+                                     VARIOS</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     BULTOS :</td>
+                                 <td>
+                                        165</td>
+                                 <td class="text_table_desc">
+
+                                     KILOS :</td>
+                                 <td>
+
+                                     153.20</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     TIP INGRESO :</td>
+                                 <td colspan="3">
+
+                                     NORMAL (SOLO PEDIMENTOS)</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     DESC CARGA :</td>
+                                 <td colspan="3">
+
+                                     &nbsp;</td>
+                             </tr>
+                             <tr>
+                                 <td class="text_table_desc">
+                                     CONSIGNATARIO :</td>
+                                 <td colspan="3">
+
+                                     &nbsp;</td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                                 <td>
+
+                                     &nbsp;</td>
+                             </tr>
+                         </table>
+                        </div>
+                        <br />
+                        <div style="display:table">
+                            <div class="Imprimir">IMPRIMIR</div>
+                            <div class="Simular">SIMULAR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+      
+    </div> 
+
+
+    <style>
+        .contenedor
+        {
+            display: table;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .contenedor-cell
+        {
+            display: table-cell;
+            vertical-align: middle;
+          
+        }
+
+        .contenedor-content
+        {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: nowrap;
+        }
+
+        .contenedor-content-left
+        {
+        }
+
+        .contenedor-content-rigth
+        {
+        }
+    </style>
+    <!-- se ejecuta cuando termina la carga de la paguina -->
+ 
+    
+    
+  
+    <script  type="text/javascript">
+        HideLoadingPage();
+        SetHeaderTitle("CONSULTA DE GUIA")
+        function Buscar()
+        {
+
+        }
+    </script>
+</body>
+
+</html>

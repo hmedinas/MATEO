@@ -1,0 +1,150 @@
+﻿.contenedor
+{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.menu
+{
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+}
+
+.menu_left
+{
+    display: table-cell;
+    width: 50%;
+}
+
+.menu_left-video
+{
+    height: 350px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px rgba(126, 197, 118, 0.76);
+    border-color: rgb(210, 215, 206);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.menu_left-text
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+    .menu_left-text a
+    {
+        font-family: Arial;
+        font-size: 19px;
+        font-style: oblique;
+        color: #000091;
+        font-weight: bold;
+    }
+
+    .menu_left-text p
+    {
+        font-family: Arial;
+        font-size: 15px;
+        font-style: oblique;
+        color: black;
+    }
+
+.menu_rigth
+{
+    display: table-cell;
+    width: 50%;
+}
+
+.menu_rigth-option
+{
+    text-align: center;
+    padding-left: 50px;
+}
+
+.menu_rigth-option--button
+{
+    border: none;
+    background-color: transparent;
+    background-image: url("image/menu_option.png");
+    background-repeat: no-repeat;
+    /* background-position: 5px; */
+    width: 295px;
+    height: 90px;
+    padding-top: 10px;
+    /*padding-left: 90px;*/
+    color: white;
+    font-size: 21px;
+    font-family: Arial;
+    font-style: oblique;
+    font-weight: normal;
+    cursor:pointer; cursor: hand;
+}
+
+.factura
+{
+    background-image: url("image/Charts.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+.icon-Reva
+{
+    background-image: url("image/Fact.png");
+    background-repeat: no-repeat;
+    /* background-position: 14px; */
+    background-position-y: -800%;
+    background-position-x: 14px;
+    padding-top: 5px;
+    padding-left: 90px;
+    height: 60px;
+    font-family: monospace;
+}
+.icon-Box
+{
+    background-image: url("image/Box.png");
+    background-repeat: no-repeat;
+    /* background-position: 14px; */
+    background-position-y: -800%;
+    background-position-x: 14px;
+    padding-top: 5px;
+    padding-left: 90px;
+    height: 60px;
+    font-family: monospace;
+}
+.icon-Char
+{
+    background-image: url("image/Chart2-64.png");
+    background-repeat: no-repeat;
+    /* background-position: 14px; */
+    background-position-y: -800%;
+    background-position-x: 14px;
+    padding-top: 5px;
+    padding-left: 90px;
+    height: 60px;
+    font-family: monospace;
+}
+.icon-Simula
+{
+    background-image: url("image/Simula.png");
+    background-repeat: no-repeat;
+    /* background-position: 14px; */
+    background-position-y: -800%;
+    background-position-x: 14px;
+    padding-top: 5px;
+    padding-left: 90px;
+    height: 60px;
+    font-family: monospace;
+}
+.icon-Invoice
+{
+    background-image: url("image/SendFact.png");
+    background-repeat: no-repeat;
+    /* background-position: 14px; */
+    background-position-y: -800%;
+    background-position-x: 14px;
+    padding-top: 5px;
+    padding-left: 90px;
+    height: 60px;
+    font-family: monospace;
+}

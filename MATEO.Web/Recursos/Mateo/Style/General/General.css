@@ -1,0 +1,19 @@
+﻿/*===========================================================
+                         HEADER       
+=============================================================*/
+@import url('css/normalize.css');
+@import url('css/Layout.css');
+@import url('css/Editorial.css');
+@import url('css/Reticula.css');
+@import url('css/Formas.css');
+/*===========================================================
+                         BODY       
+=============================================================*/
+body
+{
+    display: block;
+    margin: 0px;
+    background-color: rgb(237, 241, 255);
+}
+
+

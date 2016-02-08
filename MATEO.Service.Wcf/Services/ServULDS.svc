@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MATEO.Service.Wcf.Services.ServULDS" CodeBehind="ServULDS.svc.cs" %>

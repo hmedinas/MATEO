@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <title>.:: MATEO ::.</title>
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <!-- Se carga el Header y fondo del mateo -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" >
+
+    <link href="../../Recursos/Mateo/Style/General/General.css" rel="stylesheet" type="text/css" />
+    <script src="../../Recursos/Mateo/Script/General.js"></script>
+    
+    <link href="Reticula.css" rel="stylesheet" />
+    <style type="text/css">
+        html, body {
+           
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .home{
+	        /*background: #FFFFFF url('../Recursos/Image/ImageRotator/1.jpg') no-repeat center center fixed;*/
+            /*background: #FFFFFF url('../Recursos/Mateo/Style/Index/image/background-conference-1.jpg') no-repeat center center fixed;*/
+            background:url('../Recursos/Mateo/Style/Index/image/background-conference-1.jpg');
+              
+	        /*background-image: url('assets/bg.jpg');*/
+            /*
+	        background-size: cover;
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;*/
+	        /*height: 100%;*/
+	        text-align: center;
+	        color: #FFFFFF;
+	        padding-top:15%;
+	        /*
+	        padding: 50px 0;
+	        margin: 50% 0;*/
+	        /*PARA DECIR QUE SOLO MODIFUQE CUANDO SE CRE MUEVE SU ALTURA*/
+	        box-sizing: border-box;
+            height: 100%;
+        }
+   /*Formas*/
+   .boton:last-of-type{    
+    margin-left:  40px;
+}
+        .boton
+        {          
+            padding: 20px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function SetParrametrosGenerales(ICO_EMPR)
+        {
+            _CO_EMPR = ICO_EMPR;
+            location.href = "../Importaciones/Inicio/mImpo.html";
+        }
+
+    </script>
+    
+</head>
+<body>
+    <!-- AGREGAMOS EL LOADING DE LA PAGUINA LOADING.JS -->
+    <script src="../../Recursos/Mateo/Script/LoadingPage.js"></script>    
+    <!-- AGREGAMOS EL TECLADO TECLADO.JS    -->
+    <script src="../../Recursos/Mateo/Script/Teclado.js"></script>
+    <!-- AGREGAMOS LA CABECERA HEADER.JS -->
+    <script src="../../Recursos/Mateo/Script/header.js"></script>
+
+    <section class="home">
+        <div class="container">
+            <div class="row center">
+                <h1 class="col-10" style="color:#282828"></h1>
+                <div class="col-3 boton">
+                    <!-- ancla para navegar  -->                
+                    <a class="boton_a" onclick="SetParrametrosGenerales('06');">
+                        <div class="boton_title" > ALmacen 07</div>
+                        <div class="boton_desc" >TALMA SERVICIOS DE CARGA, S.A. DE C.V.</div>
+                    </a>
+                </div>
+                <div class="col-3 boton">
+                    <a  class="boton_a" onclick="SetParrametrosGenerales('05');">
+                        <div class="boton_title" > ALmacen 25</div>
+                        <div class="boton_desc" >TALMA MEXICO SERVICIOS AEROPORTUARIOS.</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AGREGAMOS EL FOOTER.JS -->
+    <script src="../../Recursos/Mateo/Script/Footer.js"></script>
+    <!-- EVENTOS JAVASCRIPT FINALES -->
+    <script type="text/javascript">
+        HideLoadingPage();
+        SetHeaderTitle("SELECCION DE EMPRESA");
+
+    </script>
+</body>
+</html>

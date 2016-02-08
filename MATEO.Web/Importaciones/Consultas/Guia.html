@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>.:: MATEO ::.</title>
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- Se carga el Header y fondo del mateo -->
+    <link href="../../Recursos/Mateo/Style/General/General.css" rel="stylesheet" type="text/css" />
+    <script src="../../Recursos/Mateo/Script/General.js"></script>
+    <script type="text/javascript">
+        function ShowTeclado(ControlCall) {
+            if (document.getElementById('rboVolante').checked == true) {
+                ShowTecladoNumber(ControlCall);
+            }
+            else {
+                ShowTecladoEmail(ControlCall);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- AGREGAMOS EL LOADING DE LA PAGUINA LOADING.JS -->
+    <script src="../../Recursos/Mateo/Script/LoadingPage.js"></script>
+    <!-- AGREGAMOS EL TECLADO TECLADO.JS    -->
+    <script src="../../Recursos/Mateo/Script/Teclado.js"></script>
+    <!-- AGREGAMOS LA CABECERA HEADER.JS -->
+    <script src="../../Recursos/Mateo/Script/header.js"></script>
+
+    <section class="contenedor">
+        <div class="contenedor-cell">
+            <div class="contenedor-content">
+
+                <div class="contenedor-cell">
+
+                    <div class="filtros_header">
+                        CONSULTAR POR                              
+                    </div>
+                    <div class="filtros_body" style="padding-left: 0px;">
+                        <div class="container">
+                            <div class="row around">
+                                <div class="col">
+                                    <input type="radio" name="radio" id="rboVolante" class="radio" checked />
+                                    <label for="rboVolante" class="label_select">NRO DE VOLANTE</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="radio" id="rboGuia" class="radio" />
+                                    <label for="rboGuia" class="label_select">NRO DE GUIA</label>
+                                </div>
+
+                            </div>
+                            <div class="text_search">
+                                <br />
+                            </div>
+                            <div class="row center">
+                                <div class="col-10 text_search">
+                                    <div class="search_div">
+                                        <input id="ControlCall" type="text" style="font-size: 2em !important; text-align: center; text-transform: uppercase; height: 100%; background-color: transparent; border-radius: 5px; width: 100%; display: table-cell; border-style: none;" />
+                                        <div class="search-tecl" onclick="ShowTeclado('ControlCall');"></div>
+                                        <div class="search-Busc" onclick="FindControl('ControlCall');"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_search">
+                                <br />
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="text_search">
+                        <br />
+                        <br />
+                    </div>
+                    <div class="filtros_header">
+                        RESULTADO DE LA CONSULTA 
+                    </div>
+                    <div class="filtros_body" style="height: 300px;padding-left: 0px;">
+                        <div class="container">
+                            <table style="width: 100%; padding-right: 10px; ">
+                                <tr class="tr-gray" style=" height: 30px; text-align:center">
+                                    <td class="td_center" style="width: 60px">
+                                       
+                                    </td>
+                                    <td class="td_center">VOLANTE
+                                    </td>
+                                    <td class="td_center">KILOS
+                                    </td>
+                                    <td class="td_center">BULTOS
+                                    </td>
+                                  
+                                </tr>
+                                <tr class="tr-1">
+                                    <td class="td_center">
+                                        
+                                         <img src="../../Recursos/Mateo/Style/General/image/btn/FlechaAzul.png" width="30px" />
+                                    </td>
+                                    <td class="td_center" >0001235
+                                    </td>
+                                    <td class="td_center">124.5
+                                    </td>
+                                    <td class="td_center">123
+                                    </td>
+                                   
+                                    
+                                </tr>
+                                <tr class="tr-2">
+                                    <td class="td_center">
+                                        
+                                         <img src="../../Recursos/Mateo/Style/General/image/btn/FlechaAzul.png" width="30px"/>
+                                    </td>
+                                    <td class="td_center">0001235
+                                    </td>
+                                    <td class="td_center">124.5
+                                    </td>
+                                    <td class="td_center">123
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contenedor-cell" style="width: 20px">
+                </div>
+                <div class="contenedor-cell">
+                    <div class="filtros_header">
+                        INFORMACION DEL VOLANTE 
+                    </div>
+                    <div class="filtros_body extra" style="height: 410px; width: 600px">
+                        <img src="../../Recursos/Mateo/Style/General/image/ribbon-beta.png" style="position: absolute;">
+                        <table style="width: 100%; padding-right: 10px;">
+                            <tr style="font-size: 20px;">
+                                <td colspan="4" style="text-align: center; height: 55px">
+                                    <div style="text-align: center; width: 100%">
+                                        <div style="width: 250px; border: 1px solid rgba(63, 66, 252, 0.22); text-align: center; margin: 0 auto; box-shadow: 7px 7px 7px rgba(118, 134, 197, 0.76); border-radius: 5px;">
+                                            VOLANTE : 000124
+                                        </div>
+                                        <br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">MANIFIESTO :</td>
+                                <td>201500000006927
+                                </td>
+                                <td class="text_table_desc">NRO VUELO :</td>
+                                <td>7783
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">LINEA AEREA :</td>
+                                <td colspan="3">CARGOLUX AIRLINES INTERNATIONAL, S.A.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">ORIGEN :</td>
+                                <td>LUXEMBOURG -- LUXEMB</td>
+                                <td class="text_table_desc">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">DESTINO :</td>
+                                <td>MEXICO CITY -- MEXIC</td>
+                                <td class="text_table_desc">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">GUIA MASTER :</td>
+                                <td>017285730186</td>
+                                <td class="text_table_desc">GUIA HOUSE :</td>
+                                <td>01210755</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">ORIGEN :</td>
+                                <td>&nbsp;</td>
+                                <td class="text_table_desc">DESTINO :</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">AGE. RECEPTOR :</td>
+                                <td colspan="3">CAPITAL LOGISTICS SA DE CV</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">AGE. EMBARCADOR:</td>
+                                <td colspan="3">VARIOS</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">BULTOS :</td>
+                                <td>165</td>
+                                <td class="text_table_desc">KILOS :</td>
+                                <td>153.20</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">TIP INGRESO :</td>
+                                <td colspan="3">NORMAL (SOLO PEDIMENTOS)</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">DESC CARGA :</td>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text_table_desc">CONSIGNATARIO :</td>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                    <br />
+                    <div style="display: table; padding-left: 15px;">
+                        <div class="boton_print boton_tac">
+                            Imprimir    
+                        </div>
+                        <div class="boton_Simular boton_tac">
+                            Simular       
+                        </div>
+                        <div class="boton_logOut boton_tac">
+                            Retornar                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGREGAMOS EL FOOTER.JS -->
+    <script src="../../Recursos/Mateo/Script/Footer.js"></script>
+    <!-- EVENTOS JAVASCRIPT FINALES  Y CSS FINALES-->
+
+
+    <script type="text/javascript">
+        HideLoadingPage();
+        SetHeaderTitle("CONSULTA DE GUIA");
+
+    </script>
+</body>
+<link href="../../Recursos/Mateo/Style/Page/Page.css" rel="stylesheet" />
+</html>

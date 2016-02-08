@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante version="3.2" serie="AAG" folio="00023051" fecha="2016-01-11T12:34:49" sello="H7VaqGme46HO1RDHH4LQmKmHqriKl1C4Sa4oQTttsc3rxI95/mQpjQVRtw4ip6EzlD6sof96H+plxlXhVs0TzAw9O7pOxLN7Gk9Ag5xw27wsCjsV1jTdg5Ynjy7t3T+INgvR8WeqTnXsfVaUkXHhfA39bER7ARSbs9IPQoBuZj4="
+                  formaDePago="Pago en una sola Exhibicion" 
+        noCertificado="00001000000300400054" certificado="MIIEjTCCA3WgAwIBAgIUMDAwMDEwMDAwMDAzMDA0MDAwNTQwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzA2MjgxNDExMDNaFw0xNzA2MjgxNDExMDNaMIHZMSkwJwYDVQQDEyBCUkFOSUZGIFRSQU5TUE9SVCBDQVJHQSBTQSBERSBDVjEpMCcGA1UEKRMgQlJBTklGRiBUUkFOU1BPUlQgQ0FSR0EgU0EgREUgQ1YxKTAnBgNVBAoTIEJSQU5JRkYgVFJBTlNQT1JUIENBUkdBIFNBIERFIENWMSUwIwYDVQQtExxCVEM5MjAzMzBJUEEgLyBHT05ONzcxMjIyTEQ3MR4wHAYDVQQFExUgLyBHT05ONzcxMjIyTURGTlZSMDkxDzANBgNVBAsTBk1BVFJJWjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqVEEymHv6LfueuhYG8x7g5WpC7yGRwdnlvVqVyf3pw6HUmXyjDPxqTp7YemU+Og05pvpt2vMstlAyWPOuCEkz3N7XYaGzTLMMDwhTmQrHbZbToco5MKg2t66dQOJxT8OwxGhBlCiJmA7It7oGNn4Z/dsBai/t1rUTBFGVtSdtZMCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAMcEwOOFIfc20Wl0Q6u/WF2Qx2jDLCrFUDy9Py0AOvxwdTFzMV0+9g/6fMVT1elbZZDlbMUDjdOqoR2KMM540fzHRe0udddb9wFgWLZ0bQVRXLtMk7JCtDblkX7CrT52+jjLVtbqINxrqCxCsFCoK0yE/WB5lU6BOjYNw7EWGFA2RXqmIEWQF1HojRR7gP9ThlypM9rPs0QaosrcAZildwinOs+L99UWzT1SxdzepVdzlABKznCA95a+6uOFgjcZES86BRpX/NLognVJlbftNagp7X7NBvAAfK7nQcrX+AdUw0KXgtvsGKXtrAR7wZ5ajSm0lTIMfdZzSUqIGPI4tUQ="
+        condicionesDePago="EFECTIVO" subTotal="3492.87" Moneda="MXN" TipoCambio="1" total="4051.73" tipoDeComprobante="ingreso" metodoDePago="Efectivo" LugarExpedicion="México, D.F." NumCtaPago="NO APLICA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+    <cfdi:Emisor rfc="BTC920330IPA" nombre="TALMA SERVICIOS DE CARGA, S.A. DE C.V.">
+        <cfdi:DomicilioFiscal calle="CAMINO ASA" noExterior="Edificio NC 46 Zona de agencias Aduanales AICM" colonia="PEÑON DE LOS BAÑOS" municipio="VENUSTIANO CARRANZA" estado="D. F." pais="MEXICO" codigoPostal="15520" />
+        <cfdi:RegimenFiscal Regimen="Régimen General de Ley Personas Morales" />
+    </cfdi:Emisor>
+    <cfdi:Receptor rfc="SUD150716D12" nombre="SHE 123 SA DE CV  ">
+        <cfdi:Domicilio calle="NORTE 198 " noExterior="NO. EXT. 609 " colonia="PEÑON DE LOS BAÑOS " 
+                        municipio="VENUSTIANO CARRANZA" estado="DISTRITO FEDERAL " 
+                        pais="MEXICO" codigoPostal="15520" />
+    </cfdi:Receptor>
+    <cfdi:Conceptos>
+        <cfdi:Concepto cantidad="1" unidad="No Aplica" noIdentificacion="805" descripcion="VIGILANCIA EN ZONA DE PREVIOS" valorUnitario="150" importe="150" />
+        <cfdi:Concepto cantidad="1" unidad="No Aplica" noIdentificacion="802" descripcion="CUSTODIA" valorUnitario="1352" importe="1352" />
+        <cfdi:Concepto cantidad="1" unidad="No Aplica" noIdentificacion="803" descripcion="ALMACENAJE" valorUnitario="3002.45" importe="3002.45" />
+        <cfdi:Concepto cantidad="1" unidad="No Aplica" noIdentificacion="820" descripcion="MOVILIZACION DE CARGA" valorUnitario="220" importe="220" />
+        <cfdi:Concepto cantidad="1" unidad="No Aplica" noIdentificacion="801" descripcion="MANEJO" valorUnitario="578" importe="578" />
+    </cfdi:Conceptos>
+    <cfdi:Impuestos totalImpuestosTrasladados="558.86">
+        <cfdi:Traslados>
+            <cfdi:Traslado importe="558.86" tasa="16" impuesto="IVA" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="6B158740-61DE-4EF9-9E97-0D74F5F9800B" FechaTimbrado="2016-01-11T12:37:39" selloCFD="H7VaqGme46HO1RDHH4LQmKmHqriKl1C4Sa4oQTttsc3rxI95/mQpjQVRtw4ip6EzlD6sof96H+plxlXhVs0TzAw9O7pOxLN7Gk9Ag5xw27wsCjsV1jTdg5Ynjy7t3T+INgvR8WeqTnXsfVaUkXHhfA39bER7ARSbs9IPQoBuZj4=" noCertificadoSAT="00001000000302801423" selloSAT="VsmXcQUYcnc3eFBu+Z3O2xn1Z1j1bgFMHGm5zx2BZAENhZAhXozxfVRktw7qFysLiOXEjzvDddOC8MN8muv/uTnHtsLRt6pFGOUYjixXveYufnkgll9v5YtkiGX6RzM5HhG4APrbctw/ElOdJVpYSRaJNWCa+vaX5LXZNiSC1AI=" />
+    </cfdi:Complemento>
+    <cfdi:Addenda>
+        <talma:talmaAddenda xmlns:talma="http//www.talmaaddenda.com">
+            <talma:Encabezado Operacion="IMPORTACIONES" Patente="001681" Nombre="AA RAUL FRANCISCO PIZ ENRIQUEZ" RFC="" Ruta="" TipoCambio=""
+                              FechaTipoCambio="" Serie="" Folio="" Observaciones="DESCUENTO POR OFICIO DE RETENCION ADUANA" FactRef="" />
+        
+        </talma:talmaAddenda>
+    </cfdi:Addenda>
+</cfdi:Comprobante>
